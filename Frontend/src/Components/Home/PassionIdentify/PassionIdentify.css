@@ -1,0 +1,51 @@
+.passionIdentify{
+    min-height: 70vh;
+    background-repeat: no-repeat;
+        background-size: cover;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url("background.jpg");
+    
+}
+
+.passionText{
+    text-align: justify;
+}
+
+.passionTitle{
+    text-align: end;
+}
+.passionCTA{
+    text-align: end;
+}
+.wrapper{
+    min-height:70vh;
+}
+
+@media (max-width: 767px) {
+    .passionTitle{
+        text-align: center;
+    }
+    .passionText{
+       padding-top: 3%;
+    }
+    .passionCTA{
+        text-align: center;
+        margin-top: 10%;
+    }
+    .passionIdentify{
+        
+        background-repeat: no-repeat;
+            background-size: cover;
+            background-image: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 0.6),
+              rgba(0, 0, 0, 0.6)
+            ),
+            url("mobilebackground.jpg");
+    }
+
+}

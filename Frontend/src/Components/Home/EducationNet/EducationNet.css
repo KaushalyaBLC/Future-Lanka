@@ -1,0 +1,29 @@
+.educationNet{
+    min-height: 70vh;
+    background-repeat: no-repeat;
+        background-size: cover;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url("background.jpg");
+}
+
+.educationTitle{
+    text-align: end;
+}
+
+.educationText{
+    text-align: justify;
+}
+
+.educationCTA{
+    text-align: end;
+}
+
+@media (max-width: 767px) {
+    .educationTitle,.educationCTA{
+        text-align: center;
+    }
+}

@@ -8,10 +8,10 @@ const Navigation = () => {
   return (
     <>
       <Navbar expand="lg" className="navbar" bg="dark" variant="dark">
-        <div className="container-md">
+        <div className="container-lg">
         <Navbar.Brand href="./" className="">
           <img src={Image} height="50vh" />{" "}
-          <span className="brand"> Future Lanka </span>
+          <span className="brand"> FutureLanka.lk </span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-dark" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -41,6 +41,7 @@ const Navigation = () => {
               <NavDropdown.Item as={NavLink} to="/hsnetworking">
                 Academic Networking
               </NavDropdown.Item>
+              <Dropdown.Divider />
               <NavDropdown.Item as={NavLink} to="/hsnetworking/stateuni">
                 State Universities
               </NavDropdown.Item>

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Landing.css";
-import Navigation from "../Navigation/Navigation";
-import Logo from '../Navigation/logo.png'
+import Navigation from "../../Navigation/Navigation";
 import { Link } from "react-router-dom";
 
 const Landing = () => {
@@ -11,7 +10,7 @@ const Landing = () => {
         <Navigation />
         <div className="container">
           <div className="d-flex align-items-center  flex-column flex-lg-row hero">
-            <div className="col-lg-7 col-sm-12 text-light mobile">
+            <div className="col-lg-8 col-sm-12 text-light mobile">
               <h1 className="title">
                 <span className="titleHighlight">Future Lanka</span> Research and
                 Development Foundation
@@ -26,7 +25,7 @@ const Landing = () => {
               </p>
               <div className="mt-4 ctaButton">
               <Link as={Link} to="/">
-              <btn className=" p-2 rounded btn btn-outline-warning ">Explore Your Future Now</btn>
+              <button className=" p-2 rounded btn btn-outline-warning ">Explore Your Future Now</button>
               </Link>
               </div>
             </div>
