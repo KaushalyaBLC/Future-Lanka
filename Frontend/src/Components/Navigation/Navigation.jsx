@@ -6,9 +6,10 @@ import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <div>
-      <Navbar expand="lg" className="bg-dark navbar" variant="dark">
-        <Navbar.Brand href="./" className="ps-3">
+    <>
+      <Navbar expand="lg" className="navbar" bg="dark" variant="dark">
+        <div className="container-md">
+        <Navbar.Brand href="./" className="">
           <img src={Image} height="50vh" />{" "}
           <span className="brand"> Future Lanka </span>
         </Navbar.Brand>
@@ -62,8 +63,9 @@ const Navigation = () => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
+        </div>
       </Navbar>
-    </div>
+    </>
   );
 };
 
