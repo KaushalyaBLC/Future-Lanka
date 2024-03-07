@@ -9,7 +9,7 @@ const CareerExplore = () => {
           <div className="col-12 d-flex">
             <div className="col-lg-8 col-sm-12 ">
               <h1 className=" exploreTitle">
-                Discover the  <span className="text-success">World of Careers</span>{" "}
+                Discover the  <span className="text-success">Job Market</span>{" "}
               </h1>
               <p className="exploreText mt-3">
                 Navigate the future of your career with our comprehensive Career

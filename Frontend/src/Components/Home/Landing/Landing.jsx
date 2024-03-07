@@ -2,6 +2,8 @@ import React from "react";
 import "./Landing.css";
 import Navigation from "../../Navigation/Navigation";
 import { Link } from "react-router-dom";
+import { FaFacebook } from "react-icons/fa";
+import Social from "./Social";
 
 const Landing = () => {
   return (
@@ -27,11 +29,10 @@ const Landing = () => {
               <Link as={Link} to="/">
               <button className=" p-2 rounded btn btn-outline-warning ">Explore Your Future Now</button>
               </Link>
+              <Social/>
               </div>
             </div>
-            <div className="">
-               
-            </div>
+            
           </div>
         </div>
       </section>

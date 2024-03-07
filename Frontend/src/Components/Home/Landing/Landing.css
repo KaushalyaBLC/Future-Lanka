@@ -13,7 +13,7 @@
 }
 
 .hero{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .landingParagraph{
@@ -24,8 +24,16 @@
     color: #DFB220;
 }
 .paragraphHighlight{
-    color:#20DFB2
+    color:#20DFB2;
 }
+.socialIcon{
+    color:#adb5bd;
+}
+.socialIcon:hover{
+    color:#DFB220;
+    transition: 1.5s;
+}
+
 
 
 @media (max-width: 767px) {
@@ -40,7 +48,7 @@
         margin-right: 5%;
     }
     .hero{
-        height:90vh ;
+       min-height:90vh ;
         
     }
     .title{
@@ -60,6 +68,11 @@
           rgba(0, 0, 0, 0.4)
         ),
         url("backgroundmobile.jpg");
+    }
+    .socialPack{
+       
+        align-items: center;
+        justify-content: center;
     }
 
 }

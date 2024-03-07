@@ -19,7 +19,7 @@ const Navigation = () => {
             <Nav.Link as={NavLink} to="/">
               Home
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/passion">
+            <Nav.Link as={NavLink} to="/passionId">
               Identify Passion
             </Nav.Link>
             <NavDropdown title="Discover Careers" id="basic-nav-dropdown">

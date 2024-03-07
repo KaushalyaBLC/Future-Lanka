@@ -1,0 +1,28 @@
+
+textarea{
+    resize: none;
+  
+}
+
+label{
+    margin-top: 2%;
+    
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+        background-size: cover;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url("testbg.jpg");
+}
+.registerwrap{
+    background-color: white;
+    opacity: 95%;
+}

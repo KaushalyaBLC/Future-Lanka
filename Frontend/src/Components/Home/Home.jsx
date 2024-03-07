@@ -6,6 +6,7 @@ import PassionIdentify from './PassionIdentify/PassionIdentify'
 import CareerExplore from './CareerExplore/CareerExplore'
 import EducationNet from './EducationNet/EducationNet'
 import SkillDevelop from './SkillDevelop/SkillDevelop'
+import AboutUs from './AboutUs/AboutUs'
 
 const Home= () => {
   return (
@@ -16,6 +17,7 @@ const Home= () => {
         <CareerExplore/>
         <EducationNet/>
         <SkillDevelop/>
+        <AboutUs/>
     </>
   )
 }

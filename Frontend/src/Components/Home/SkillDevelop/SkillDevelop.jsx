@@ -23,7 +23,7 @@ const SkillDevelop = () => {
               </p>
               <div className="skillCTA">
                 <button className="btn btn-outline-success mt-3 ">
-                  Explore the Careers Now!
+                  Start Enhancing Your Skills Today!
                 </button>
               </div>
             </div>

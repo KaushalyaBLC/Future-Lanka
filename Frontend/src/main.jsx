@@ -9,12 +9,26 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import PassionId from './Components/PassionIdTool/PassionId.jsx';
+import PassionTest from './Components/PassionIdTool/PassionTest.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
         <App/>
+    ),
+  },
+  {
+    path: "/passionId",
+    element: (
+        <PassionId/>
+    ),
+  },
+  {
+    path: "/passionId/test",
+    element: (
+        <PassionTest/>
     ),
   },
 ]);
