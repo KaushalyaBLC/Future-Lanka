@@ -4,6 +4,7 @@ import "./PassionId.css";
 import { useState } from "react";
 import Robotimage from "./robot.png";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 const PassionId = () => {
   
@@ -63,7 +64,9 @@ const PassionId = () => {
             </div>
           </div>
         </div>
+        <Footer/>
       </section>
+      
     );
   
 };

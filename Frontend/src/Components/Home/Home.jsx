@@ -7,10 +7,12 @@ import CareerExplore from './CareerExplore/CareerExplore'
 import EducationNet from './EducationNet/EducationNet'
 import SkillDevelop from './SkillDevelop/SkillDevelop'
 import AboutUs from './AboutUs/AboutUs'
+import Footer from '../Footer/Footer'
+import './Home.css'
 
 const Home= () => {
   return (
-    <>
+    <section className='home'>
         <Landing/>
         <OurServices/>
         <PassionIdentify/>
@@ -18,7 +20,8 @@ const Home= () => {
         <EducationNet/>
         <SkillDevelop/>
         <AboutUs/>
-    </>
+        <Footer/>
+    </section>
   )
 }
 

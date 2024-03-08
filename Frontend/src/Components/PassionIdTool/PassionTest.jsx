@@ -2,6 +2,7 @@ import React from "react";
 import "./PassionTest.css";
 import { useState,useEffect } from "react";
 import Navigation from "../Navigation/Navigation";
+import Footer from "../Footer/Footer";
 
 const PassionTest = () => {
 
@@ -220,6 +221,7 @@ const PassionTest = () => {
             </div>
           </div>
         </div>
+        <Footer/>
       </>
     );
   } else if (pageIndex === 2) {
@@ -294,6 +296,7 @@ const PassionTest = () => {
             </div>
           </div>
         </div>
+        <Footer/>
       </>
     );
   } else if (pageIndex === 3) {
@@ -368,6 +371,7 @@ const PassionTest = () => {
             </div>
           </div>
         </div>
+        <Footer/>
       </>
     );
   } else if (pageIndex === 4) {
@@ -396,7 +400,9 @@ const PassionTest = () => {
               
             </div>
           </div>
+          
         </div>
+        <Footer/>
       </>
     );
   }
