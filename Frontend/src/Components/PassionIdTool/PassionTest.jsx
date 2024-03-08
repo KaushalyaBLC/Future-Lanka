@@ -208,6 +208,7 @@ const PassionTest = () => {
                 required
               />
               <p className="text-danger">{q1error}</p>
+              <div className="col-12 d-flex">
               <button
                 onClick={() => validateFirst()}
                 className="btn btn-warning"
@@ -215,6 +216,7 @@ const PassionTest = () => {
                
                 Next
               </button>
+              </div>
             </div>
           </div>
         </div>

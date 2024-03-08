@@ -11,12 +11,12 @@ const PassionId = () => {
       <section className="passionId">
         <Navigation />
         <div className="container pt-5 pb-5 text-light">
-          <h1>Welcome to A.I Powered Skill & Passion Identification Tool</h1>
+          <h1>Welcome to AI Powered <span className="text-warning">Skill & Passion Identification Bot</span></h1>
           <div className="row mt-5">
             <div className="col-lg-9 text">
               <p>
                 Embark on a transformative journey of self-discovery with our
-                innovative tool. Answer 12 thoughtfully crafted questions to
+                innovative tool. Answer some thoughtfully crafted questions to
                 uncover your passions, skills, and interests. Our intuitive
                 analysis will guide you towards a clearer understanding of your
                 unique strengths. But that's not all receive personalized career
@@ -26,7 +26,7 @@ const PassionId = () => {
               </p>
               <ul className="col-10">
                 <li>
-                  <b>Uncover Your Passions:</b> Answer 12 tailored questions to
+                  <b>Uncover Your Passions:</b> Answer some tailored questions to
                   explore your deepest interests.
                 </li>
                 <li>
@@ -39,7 +39,7 @@ const PassionId = () => {
                   career paths.
                 </li>
                 <li>
-                  <b>Navigate Your Path:</b> Let PassionCraft 12 be your guide
+                  <b>Navigate Your Path:</b> Let Skill & Passion Identification Bot be your guide
                   to a more fulfilling and purposeful life.
                 </li>
                 <li>
