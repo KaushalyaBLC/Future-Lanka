@@ -1,6 +1,7 @@
 import React from "react";
 import "./PassionIdentify.css";
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const PassionIdentify = () => {
   return (
@@ -23,7 +24,9 @@ const PassionIdentify = () => {
               self-discovery
             </p>
             <div className="passionCTA mt-3">
+              <Link to={'./passionId'}>
             <button className="btn btn-outline-warning">Identify Your Potential Now!</button>
+            </Link>
             </div>
           </div>
           </div>

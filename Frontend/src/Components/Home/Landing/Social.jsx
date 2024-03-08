@@ -10,6 +10,7 @@ const Social = () => {
         <div className="col-12 d-flex socialPack pt-2">
           <div className="socialIcon">
             <FaFacebook size={25} />
+            
           </div>
           <div className="ms-3 socialIcon">
             <FaInstagram  size={25} />

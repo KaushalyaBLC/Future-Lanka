@@ -117,12 +117,12 @@ app.post("/api/submitFormData", async (req, res) => {
     ${questions[10]}-${formData.q11},
     ${questions[11]}-${formData.q12},
     
-    im a srilankan student using these questions and answers describe me as long as you can and suggest me 6 careers paragrahs must be natural language and be descriptive and long as you can job suggestion mus have a descriptio technical skills,soft skills and salary range finally give me some advice to match up with the job market  `
+    im a student using these questions and answers describe me as long as you can and suggest me 6 careers paragrahs must be natural language and be descriptive and long as you can job suggestion mus have a descriptio technical skills,soft skills and salary range finally give me some advice to match up with the job market  `
 
 
     await runChat(prompt);
     const cleanedResponse = rep.replace(/\*\*/g, '');
-    console.log(rep);
+    console.log("Reply generated!");
     
   res.json({ success: true, message:cleanedResponse });
 });

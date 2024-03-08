@@ -10,7 +10,7 @@ const PassionTest = () => {
   const submitForm = async () => {
     
     try {
-      const response = await fetch('http://localhost:5000/api/submitFormData', {
+      const response = await fetch('https://future-lanka.onrender.com/api/submitFormData', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
