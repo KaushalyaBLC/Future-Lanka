@@ -132,8 +132,6 @@ const PassionTest = () => {
     }
   };
 
- // Empty dependency array means it will run only once
-
   if (pageIndex === 1) {
     return (
       <>

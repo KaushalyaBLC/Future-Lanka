@@ -12,44 +12,47 @@ const AboutUs = () => {
             and <br />
             Development Foundation?
           </h1>
-          <div className=" col-12 pt-5">
-            <div className="col-lg-12 text-center">
-              <h3>- Our Vision -</h3>
-              <p className="vision">
-                “Empower the nation with sustainable & productive workforce”
-              </p>
-            </div>
-          </div>
+
           <div className="col-12 mt-5 d-flex flex-column flex-lg-row">
-            <div className=" col-lg-9 col-sm-12 ">
-              <p className="aboutText ">
-                Future Lanka Foundation is a dynamic alliance of academics and
-                industry professionals dedicated to guiding students towards
-                successful careers aligned with their passions and skills.
-                Employing a unique and scientific approach, we empower students
-                to comprehend their strengths and understand the evolving job
-                market, facilitating informed and lucrative career decisions.
-                Through transformative experiences like life coaching sessions,
-                corporate visits, and internships, we create opportunities for
-                students to thrive. Collaborating with esteemed corporates and
-                academic institutions in Sri Lanka, we ensure unparalleled
-                exposure for aspiring individuals. As an independent and
-                unbiased entity, we assist students in discovering the optimal
-                academic path and higher education provider that aligns
-                seamlessly with their career aspirations and financial
-                capacities. Join us at Future Lanka Foundation, where we craft
-                opportunities and inspire success on the journey to a fulfilling
-                career.
+            <div className="col-lg-3"></div>
+            <div className=" col-lg-8 ">
+              <h5> Empowering Careers, Transforming Lives!</h5>
+              <p>
+                Discover a world of possibilities with Future Lanka Foundation,
+                where academics and industry professionals unite to guide you
+                towards a successful career aligned with your passions and
+                skills.
               </p>
-            </div>
-            <div className="col-lg-3 col-sm-12 text-center  ">
-              <img src={Logo} alt="Future Lanka Logo" height={200} />
+              <h5 className="pt-3">Why Future Lanka Foundation?</h5>
+              <ul>
+                <li>
+                  <b>Scientific Approach:</b> Unleash your potential through our
+                  unique and scientific approach to career guidance.{" "}
+                </li>
+                <li>
+                  <b> Unmatched Experiences:</b> Dive into transformative
+                  experiences - from life coaching to corporate visits -
+                  creating opportunities for your growth.{" "}
+                </li>
+                <li>
+                  {" "}
+                  <b>Industry Collaboration:</b> Benefit from our partnerships with
+                  esteemed corporates and academic institutions, ensuring
+                  unparalleled exposure.
+                </li>
+                <li>
+                  {" "}
+                 <b> Tailored Guidance:</b> As an independent entity, we assist you in
+                  discovering the optimal academic path and higher education
+                  provider for a seamless journey to success.
+                </li>
+              </ul>
             </div>
           </div>
           <div className="text-center col-12 mt-4">
-         <button className="btn btn-outline-primary">Read More</button>
-         <button className="btn btn-outline-warning ms-3">Contact Us</button>
-         </div>
+            <button className="btn btn-outline-primary">Read More</button>
+            <button className="btn btn-outline-warning ms-3">Contact Us</button>
+          </div>
         </div>
       </section>
     </>

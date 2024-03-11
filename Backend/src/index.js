@@ -96,6 +96,8 @@ async function runChat(userMessage) {
   const response = result.response;
   rep=response.text();
 }
+app.options("/api/submitFormData", cors());
+
 
 app.post("/api/submitFormData", async (req, res) => {
   // Handle the form data here
@@ -124,6 +126,11 @@ app.post("/api/submitFormData", async (req, res) => {
     const cleanedResponse = rep.replace(/\*\*/g, '');
     console.log("Reply generated!");
     
+    res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
   res.json({ success: true, message:cleanedResponse });
 });
 
