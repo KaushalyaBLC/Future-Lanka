@@ -31,3 +31,8 @@ address{
     color: white;
     transition: 1.5s;
 }
+@media (max-width: 767px) {
+    .f-block{
+        justify-content: center;
+    }
+}

@@ -2,7 +2,7 @@ import React from "react";
 import Navigation from "../Navigation/Navigation";
 import "./PassionId.css";
 import { useState } from "react";
-import Robotimage from "./robot.png";
+import AI from "./aibot.gif";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 
@@ -11,9 +11,9 @@ const PassionId = () => {
     return (
       <section className="passionId">
         <Navigation />
-        <div className="container pt-5 pb-5 text-light">
-          <h1>Welcome to AI Powered <span className="text-warning">Skill & Passion Identification Bot</span></h1>
-          <div className="row mt-5">
+        <div className="container pt-5 pb-5 ">
+          <h1>Welcome to AI Powered <span className="text-success">Skill & Passion Identification Bot</span></h1>
+          <div className="row mt-4">
             <div className="col-lg-9 text">
               <p>
                 Embark on a transformative journey of self-discovery with our
@@ -51,7 +51,7 @@ const PassionId = () => {
               <div className="text-center mt-5">
                 <Link to={"./test"}>
                   <button
-                    className="btn btn-outline-warning"
+                    className="btn btn-success"
                     onClick={() => setstate("q1")}
                   >
                     Let's Start!
@@ -59,8 +59,8 @@ const PassionId = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-3 text-center">
-              <img src={Robotimage} width={200} />
+            <div className="col-3 text-center d-flex">
+              <img src={AI} className="aibot ms-auto"/>
             </div>
           </div>
         </div>
