@@ -1,39 +1,38 @@
 import React from "react";
 import "./PassionTest.css";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import Navigation from "../Navigation/Navigation";
 import Footer from "../Footer/Footer";
+import AI from "./aibot.gif";
 
 const PassionTest = () => {
-
-  
-
   const submitForm = async () => {
-    
     try {
-      const response = await fetch('https://future-lanka.onrender.com/api/submitFormData', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-        
-      });
+      const response = await fetch(
+        "https://future-lanka.onrender.com/api/submitFormData",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
       if (response.ok) {
         const result = await response.json();
         setres(result);
         console.log(result);
         // Optionally, you can handle the server response here
       } else {
-        console.error('Failed to submit form data');
+        console.error("Failed to submit form data");
       }
     } catch (error) {
-      console.error('Error during form submission:', error);
+      console.error("Error during form submission:", error);
     }
   };
 
   const questionList = {
-    q1: "What hobies do you like to do in your free time?",
+    q1: "What do you love doing in your free time, and why? ",
 
     q2: "What are your strong points, particularly in communication, problem-solving, creativity, technical skills, interpersonal skills, leadership skills, and analytical skills?",
 
@@ -79,9 +78,7 @@ const PassionTest = () => {
   const [q1error, setq1error] = useState("");
   const [q2error, setq2error] = useState("");
   const [q3error, setq3error] = useState("");
-  const [res,setres]=useState("");
-
-  
+  const [res, setres] = useState("");
 
   const handleChange = (e) => {
     setFormData({
@@ -126,9 +123,9 @@ const PassionTest = () => {
     ) {
       setq3error("*Please fill the required sections before continue");
     } else {
-      
-      setpageIndex(4);
       submitForm();
+      setpageIndex(4);
+      
     }
   };
 
@@ -136,8 +133,8 @@ const PassionTest = () => {
     return (
       <>
         <Navigation />
-        <div className="col-12  form p-5">
-          <div className="registerwrap p-5 col-lg-6 border border-3 rounded border-warning ">
+        <div className="col-12  form ">
+          <div className="registerwrap col-lg-6 border border-3 rounded border-success ">
             <h3 className="text-center">
               Identify Your True Potential with Future Lanka Passion
               Identification Bot
@@ -208,26 +205,29 @@ const PassionTest = () => {
               />
               <p className="text-danger">{q1error}</p>
               <div className="col-12 d-flex">
-              <button
-                onClick={() => validateFirst()}
-                className="btn btn-warning"
-              >
-               
-                Next
-              </button>
+                <button onClick={() => ""} className="btn btn-warning">
+                  Back
+                </button>
+                <button
+                  onClick={() => validateFirst()}
+                  className="btn btn-warning ms-auto"
+                >
+                  Next
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </>
     );
   } else if (pageIndex === 2) {
+    
     return (
       <>
         <Navigation />
-        <div className="col-12  form p-5">
-          <div className="registerwrap p-5 col-lg-6 border border-3 rounded border-warning">
+        <div className="col-12  form ">
+          <div className="registerwrap col-lg-6 border border-3 rounded border-success">
             <h3 className="text-center">
               Identify Your True Potential with Future Lanka Passion
               Identification Bot
@@ -285,24 +285,32 @@ const PassionTest = () => {
                 required
               />
               <p className="text-danger">{q2error}</p>
-              <button
-                onClick={() => validateSecond()}
-                className="btn btn-warning"
-              >
-                Next
-              </button>
+              <div className="col-12 d-flex">
+                <button
+                  onClick={() => setpageIndex(pageIndex - 1)}
+                  className="btn btn-warning"
+                >
+                  Back
+                </button>
+                <button
+                  onClick={() => validateSecond()}
+                  className="btn btn-warning ms-auto"
+                >
+                  Next
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </>
     );
   } else if (pageIndex === 3) {
     return (
       <>
         <Navigation />
-        <div className="col-12  form p-5">
-          <div className="registerwrap p-5 col-lg-6 border border-3 rounded border-warning ">
+        <div className="col-12  form ">
+          <div className="registerwrap  col-lg-6 border border-3 rounded border-success ">
             <h3 className="text-center">
               Identify Your True Potential with Future Lanka Passion
               Identification Bot
@@ -360,49 +368,80 @@ const PassionTest = () => {
                 required
               />
               <p className="text-danger">{q2error}</p>
-              <button
-                onClick={() => validateThird()}
-                className="btn btn-warning"
-              >
-                Finish
-              </button>
+              <div className="col-12 d-flex">
+                <button
+                  onClick={() => setpageIndex(pageIndex - 1)}
+                  className="btn btn-warning"
+                >
+                  Back
+                </button>
+                <button
+                  onClick={() => validateThird()}
+                  className="btn btn-warning ms-auto "
+                >
+                  Finish
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </>
     );
   } else if (pageIndex === 4) {
-   
-    return (
-      <>
-      <Navigation/>
-        <div className="col-12  form p-5">
-          <div className="registerwrap p-5 col-lg-8 border border-3 rounded border-warning ">
-            <h3 className="text-center">
-              Identify Your True Potential with Future Lanka Passion
-              Identification Bot
-            </h3>
-            <div className="mt-4">
-              <h5>Welcome {formData.name},</h5>
-              <textarea
-                className="col-12"
-                rows={55}
-                cols={20}
-                id="result"
-                name="result"
-                value={res.message}
-                onChange={handleChange}
-                
-              />
-              
+    if (res === "") {
+      return (
+        <>
+          <section className="waiting  d-flex align-items-center justify-content-center  ">
+            <div className="container ">
+              <div className="d-flex justify-content-center">
+                <img src={AI} alt="Aibot image" className="pendinganim" />
+              </div>
+              <div>
+                <h5 className="text-center">
+                  Hello <span className="text-success"> {formData.name},</span>
+                  <br /> Passion identification bot is generating your result,
+                  Please Wait!
+                </h5>
+              </div>
+            </div>
+          </section>
+        </>
+      );
+    } else {
+      return (
+        <>
+          <Navigation />
+          <div className="col-12  form">
+            <div className="registerwrap col-lg-8 border border-3 rounded border-success ">
+              <h3 className="text-center">
+                Identify Your True Potential with Future Lanka Passion
+                Identification Bot
+              </h3>
+              <div className="mt-4">
+                <h5>Welcome {formData.name},</h5>
+                <textarea
+                  className="col-12"
+                  rows={55}
+                  cols={20}
+                  id="result"
+                  name="result"
+                  value={res.message}
+                  onChange={handleChange}
+                />
+                <p>
+                  You know yourself better than anyone, Use these suggestions as
+                  a starting point for self-discovery. Research thoroughly and
+                  make choices aligned with your unique goals and circumstances.
+                </p>
+                <h6>Good Luck for your career journey!</h6>
+              </div>
             </div>
           </div>
-          
-        </div>
-        <Footer/>
-      </>
-    );
+          <Footer />
+        </>
+      );
+    }
   }
 };
 

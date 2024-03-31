@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <section className="bg-dark footer">
       <div className="flfooter d-flex text-light   flex-column flex-lg-row p-4">
-        <div className="col-lg-5 col-sm-12 p-3">
+        <div className="col-lg-5 col-sm-12 p-3 f-block ">
           <h6>Future Lanka Research and Development Foundation</h6>
           <p className="footerText">
             Future Lanka Foundation empowers students with a unique approach to
@@ -38,7 +38,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="col-lg-2 col-sm-12 p-3 ps-5  ">
+        <div className="col-lg-2 col-sm-12 p-3 ps-5 fblock  ">
           <h6>Valuable Links</h6>
           <Link to={"./"} className="links">
             <li>Home</li>
@@ -56,7 +56,7 @@ const Footer = () => {
             <li>Soft Skill Development</li>
           </Link>
         </div>
-        <div className="col-lg-3 col-sm-12 p-3">
+        <div className="col-lg-3 col-sm-12 p-3 f-block">
           <div className="row">
             <h6>Follow us on Social Media</h6>
             <div className="d-flex">
@@ -81,12 +81,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-4 col-lg-12">
+        <div className="col-lg-4 col-lg-12 f-block">
           <img src={Logo} height="200vh" />
         </div>
       </div>
-      <div className="d-flex align-items-center justify-content-center ml-3 mr-3 col-12 bg-transparent text-secondary">
-        <div style={{ height: '10vh' }} className="d-flex align-items-center justify-content-center ml-3 mr-3 col-10 border-top border-2">
+      <div className="d-flex align-items-center justify-content-center ml-3 mr-3 col-12 bg-transparent text-secondary ">
+        <div style={{ height: '10vh' }} className="d-flex align-items-center justify-content-center ml-3 mr-3 col-10 border-top border-2 pt-3">
             <p>&copy; {new Date().getFullYear()} Future Lanka Research & Development Foundation | All right reserved  </p>
         </div>
         </div>
