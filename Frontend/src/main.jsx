@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import PassionId from './Components/PassionIdTool/PassionId.jsx';
 import PassionTest from './Components/PassionIdTool/PassionTest.jsx';
+import Jobmarket from './Components/DiscoverJobmarket/Jobmarket.jsx';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,12 @@ const router = createBrowserRouter([
     path: "/passionId/test",
     element: (
         <PassionTest/>
+    ),
+  },
+  {
+    path: "/careers",
+    element: (
+        <Jobmarket/>
     ),
   },
 ]);
