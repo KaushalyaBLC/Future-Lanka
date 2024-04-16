@@ -32,29 +32,29 @@ const PassionTest = () => {
   };
 
   const questionList = {
-    q1: "What do you love doing in your free time, and why? ",
+    q1: "How confident do you feel in your mathematics and science abilities? (Rate from 1 to 5, where 1 is not confident and 5 is very confident)",
 
-    q2: "What are your strong points, particularly in communication, problem-solving, creativity, technical skills, interpersonal skills, leadership skills, and analytical skills?",
+    q2: "Describe a recent academic project or assignment you are particularly proud of. What skills did you utilize to complete it?",
 
-    q3: "Tell me about your education level and field of study.",
+    q3: "Have you ever engaged in coding or programming? If yes, what languages have you tried, and what did you create",
 
-    q4: "What topics or causes are you really passionate about, and how can you incorporate these into your career?",
+    q4: "Rate your proficiency in using computers and software applications (such as word processors, spreadsheets, and presentation tools) from 1 to 5.",
 
-    q5: "What values matter most to you in a job? Why are these significant, and how do they impact your decision-making?",
+    q5: "How comfortable are you with writing essays or reports? (Rate from 1 to 5)",
 
-    q6: "Do you prefer working alone or as part of a team? Can you describe your ideal work environment, such as an office, outdoors, or remote setting?",
+    q6: "What subjects are you most passionate about, and why?",
 
-    q7: "What part of working on projects motivates you the most? Do you enjoy the initial problem-solving, the ongoing process, or the satisfaction of completing long-term projects?",
+    q7: "Describe a topic or concept you learned outside your school curriculum that fascinated you.",
 
-    q8: "How comfortable are you with technology, especially given its rapid advancements?",
+    q8: "What extracurricular activities do you participate in (e.g., sports, arts, clubs)? How do these activities reflect your interests or passions?",
 
-    q9: "Share a glimpse into your long-term career goals. What kind of impact do you hope to achieve?",
+    q9: "Have you taken any initiatives or led any projects within these activities? Describe your role and the impact of your work.",
 
-    q10: "If you're comfortable, what salary range are you aiming for in your future career?",
+    q10: "Name 3 career path are you considering pursuing after A-Levels? Why does this particular path interest you?",
 
-    q11: "Are there specific companies or industries you're keen on working in? What attracts you to them?",
+    q11: "Do you prefer to work individually or as part of a team? Explain why",
 
-    q12: "Describe the work-life balance you're aiming for and how crucial flexibility is in your career.",
+    q12: "Describe how you organize and prioritize your schoolwork and extracurricular activities.",
   };
 
   const initialFormData = {
