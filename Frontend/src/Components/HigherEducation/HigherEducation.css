@@ -1,0 +1,39 @@
+.educationBody{
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    min-height: 20vh;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.titleDescription{
+    text-align: justify;
+   
+}
+.card{
+    min-height:20vh ;
+    display: flex;
+    align-items: center;
+
+}
+
+.description {
+    opacity: 0;
+   
+  }
+  
+  .hovered .description {
+    opacity: 1;
+    animation: fadeIn 2s ease; 
+    transition: 2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with 0 opacity */
+  }
+  to {
+    opacity: 1; /* Transition to 100% opacity */
+  }
+}

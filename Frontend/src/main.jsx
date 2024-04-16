@@ -12,6 +12,7 @@ import {
 import PassionId from './Components/PassionIdTool/PassionId.jsx';
 import PassionTest from './Components/PassionIdTool/PassionTest.jsx';
 import Jobmarket from './Components/DiscoverJobmarket/Jobmarket.jsx';
+import HigherEducation from './Components/HigherEducation/HigherEducation.jsx';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,12 @@ const router = createBrowserRouter([
     path: "/careers",
     element: (
         <Jobmarket/>
+    ),
+  },
+  {
+    path: "/education",
+    element: (
+        <HigherEducation/>
     ),
   },
 ]);
