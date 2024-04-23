@@ -90,7 +90,6 @@ const PassionTest = () => {
     subject9: "",
     result1: "",
     result2: "",
-    result1: "",
     result3: "",
     result4: "",
     result5: "",
