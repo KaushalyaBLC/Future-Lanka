@@ -17,7 +17,7 @@ const PassionTest = () => {
   const submitForm = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/submitFormData",
+        "https://future-lanka.onrender.com/api/submitFormData",
         {
           method: "POST",
           headers: {
@@ -90,7 +90,6 @@ const PassionTest = () => {
     subject9: "",
     result1: "",
     result2: "",
-    result1: "",
     result3: "",
     result4: "",
     result5: "",
@@ -243,118 +242,7 @@ const PassionTest = () => {
       <Footer />
     </>
   );
-  if (pageIndex === 1) {
-    return (
-      <>
-        <Navigation />
-        <FormPage1
-          formData={formData}
-          handleChange={handleChange}
-          validateFirst={validateFirst}
-          q1error={q1error}
-        />
-      </>
-    );
-  } else if (pageIndex === 2) {
-    return (
-      <>
-        <FormPage2
-          formData={formData}
-          handleChange={handleChange}
-          validateSecond={validateSecond}
-          q2error={q2error}
-          questionList={questionList}
-          pageIndex={pageIndex}
-          setpageIndex={setpageIndex}
-        />
-      </>
-    );
-  } else if (pageIndex === 3) {
-    return (
-      <>
-        <Navigation />
-        <FormPage3
-          formData={formData}
-          handleChange={handleChange}
-          validateThird={validateThird}
-          q3error={q3error}
-          questionList={questionList}
-          pageIndex={pageIndex}
-          setpageIndex={setpageIndex}
-        />
-        <Footer />
-      </>
-    );
-  } else if (pageIndex === 4) {
-    return (
-      <>
-        <Navigation />
-        <FormPage4
-          formData={formData}
-          handleChange={handleChange}
-          validateFourth={validateFourth}
-          q4error={q4error}
-          questionList={questionList}
-          pageIndex={pageIndex}
-          setpageIndex={setpageIndex}
-        />
-      </>
-    );
-  } else if (pageIndex === 5) {
-    if (res === "") {
-      return (
-        <>
-          <section className="waiting  d-flex align-items-center justify-content-center  ">
-            <div className="container ">
-              <div className="d-flex justify-content-center">
-                <img src={AI} alt="Aibot image" className="pendinganim" />
-              </div>
-              <div>
-                <h5 className="text-center">
-                  Hello <span className="text-success"> {formData.name},</span>
-                  <br /> Passion identification bot is generating your result,
-                  Please Wait!
-                </h5>
-              </div>
-            </div>
-          </section>
-        </>
-      );
-    } else {
-      return (
-        <>
-          <Navigation />
-          <div className="col-12  form">
-            <div className="registerwrap col-lg-8 border border-3 rounded border-success ">
-              <h3 className="text-center">
-                Identify Your True Potential with Future Lanka Passion
-                Identification Bot
-              </h3>
-              <div className="mt-4">
-                <h5>Welcome {formData.name},</h5>
-                <textarea
-                  className="col-12"
-                  rows={55}
-                  cols={20}
-                  id="result"
-                  name="result"
-                  value={res.message}
-                  onChange={handleChange}
-                />
-                <p>
-                  You know yourself better than anyone, Use these suggestions as
-                  a starting point for self-discovery. Research thoroughly and
-                  make choices aligned with your unique goals and circumstances.
-                </p>
-                <h6>Good Luck for your career journey!</h6>
-              </div>
-            </div>
-          </div>
-          <Footer />
-        </>
-      );
-    }
-  }
+  
 };
 
 export default PassionTest;
