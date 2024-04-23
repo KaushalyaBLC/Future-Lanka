@@ -375,6 +375,7 @@ app.post("/api/submitFormData", async (req, res) => {
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
   );
+  
   res.json({ success: true, message: cleanedResponse });
 
   insertReportData(formData,cleanedResponse);
