@@ -9,7 +9,7 @@ const HigherEducation = () => {
   return (
     <>
       <Navigation />
-      <h1 className=" col-12 pt-3 pb-3 ps-3 mt-3 text-light bg-warning">Education Networking</h1>
+      <h1 className=" col-12 pt-3 pb-3 ps-3 mt-3 text-light bg-success">Academic Networking</h1>
       <div className="educationBody col-12 ">
 
         <div className="pt-3">

@@ -4,12 +4,20 @@ import { useState, useEffect } from "react";
 import Navigation from "../Navigation/Navigation";
 import Footer from "../Footer/Footer";
 import AI from "./aibot.gif";
+import FormPage1 from "./FormPage1";
+import FormPage2 from "./FormPage2";
+import FormPage3 from "./FormPage3";
+import FormPage4 from "./FormPage4";
+import GeneratingResult from "./GeneratingResult";
+import Report from "./Report"
+
+
 
 const PassionTest = () => {
   const submitForm = async () => {
     try {
       const response = await fetch(
-        "https://future-lanka.onrender.com/api/submitFormData",
+        "http://localhost:5000/api/submitFormData",
         {
           method: "POST",
           headers: {
@@ -34,31 +42,62 @@ const PassionTest = () => {
   const questionList = {
     q1: "How confident do you feel in your mathematics and science abilities? (Rate from 1 to 5, where 1 is not confident and 5 is very confident)",
 
-    q2: "Describe a recent academic project or assignment you are particularly proud of. What skills did you utilize to complete it?",
+    q2: "Describe some notable academic achievements you attained after the age of 15 years ",
 
-    q3: "Have you ever engaged in coding or programming? If yes, what languages have you tried, and what did you create",
+    q3: "Have you ever engaged in coding or programming? ",
 
-    q4: "Rate your proficiency in using computers and software applications (such as word processors, spreadsheets, and presentation tools) from 1 to 5.",
+    q4: "If yes, what languages have you tried, and what did you create",
 
-    q5: "How comfortable are you with writing essays or reports? (Rate from 1 to 5)",
+    q5: "Rate your proficiency in using computers and software applications (such as word processors, spreadsheets, and presentation tools) from 1 to 5.",
 
-    q6: "What subjects are you most passionate about, and why?",
+    q6: "How comfortable are you with writing essays or reports? (Rate from 1 to 5)",
 
-    q7: "Describe a topic or concept you learned outside your school curriculum that fascinated you.",
+    q7: "What subjects are you most passionate about, and why?",
 
-    q8: "What extracurricular activities do you participate in (e.g., sports, arts, clubs)? How do these activities reflect your interests or passions?",
+    q8: "Describe a topic or concept you learned outside your school curriculum that fascinated you.",
 
-    q9: "Have you taken any initiatives or led any projects within these activities? Describe your role and the impact of your work.",
+    q9: "Which sports have you participated in?",
 
-    q10: "Name 3 career path are you considering pursuing after A-Levels? Why does this particular path interest you?",
+    q10: "What is the highest level of achievement have you attained in the sport(s) you participated in?",
 
-    q11: "Do you prefer to work individually or as part of a team? Explain why",
+    q11: "Which extracurricular activities have you participated in, and mention any special positions or roles you hold in those activities?",
 
-    q12: "Describe how you organize and prioritize your schoolwork and extracurricular activities.",
+    q12: "Have you taken any initiatives or led any projects? If so, please describe your role and the impact of your work.",
+
+    q13: "Name 3 careers are you considering pursuing? Why does this particular path interest you?",
+
+    q14: "Do you prefer to work individually or as part of a team? Explain why",
   };
 
   const initialFormData = {
     name: "",
+    age: "",
+    gender: "",
+    telNo: "",
+    email: "",
+    educationLevel: "",
+    stream: "",
+    combination: "",
+    degree: "",
+    subject1: "",
+    subject2: "",
+    subject3: "",
+    subject4: "",
+    subject5: "",
+    subject6: "",
+    subject7: "",
+    subject8: "",
+    subject9: "",
+    result1: "",
+    result2: "",
+    result1: "",
+    result3: "",
+    result4: "",
+    result5: "",
+    result6: "",
+    result7: "",
+    result8: "",
+    result9: "",
     q1: "",
     q2: "",
     q3: "",
@@ -71,6 +110,8 @@ const PassionTest = () => {
     q10: "",
     q11: "",
     q12: "",
+    q13: "",
+    q14: "",
   };
 
   const [formData, setFormData] = useState(initialFormData);
@@ -78,6 +119,7 @@ const PassionTest = () => {
   const [q1error, setq1error] = useState("");
   const [q2error, setq2error] = useState("");
   const [q3error, setq3error] = useState("");
+  const [q4error, setq4error] = useState("");
   const [res, setres] = useState("");
 
   const handleChange = (e) => {
@@ -87,308 +129,178 @@ const PassionTest = () => {
     });
   };
 
+  const makeRequest =() => {
+
+  }
+
   const validateFirst = () => {
     if (
       formData.name == "" ||
-      formData.q1 == "" ||
-      formData.q2 == "" ||
-      formData.q3 == "" ||
-      formData.q4 == ""
+      formData.age == "" ||
+      formData.telNo == "" ||
+      formData.gender == "" ||
+      formData.educationLevel == ""
     ) {
       setq1error("*Please fill the required sections before continue");
     } else {
       setpageIndex(2);
+      setq1error("");
     }
   };
 
   const validateSecond = () => {
     if (
-      formData.q5 == "" ||
-      formData.q6 == "" ||
-      formData.q7 == "" ||
-      formData.q8 == ""
+      formData.q1 == "" ||
+      formData.q2 == "" ||
+      formData.q3 == "" ||
+      formData.q5 == ""
     ) {
       setq2error("*Please fill the required sections before continue");
     } else {
       setpageIndex(3);
+      setq2error("");
     }
   };
 
   const validateThird = () => {
-    if (
-      formData.q9 == "" ||
-      formData.q10 == "" ||
-      formData.q11 == "" ||
-      formData.q12 == ""
-    ) {
+    if (formData.q6 == "" || formData.q7 == "" || formData.q9 == "") {
       setq3error("*Please fill the required sections before continue");
     } else {
-      submitForm();
       setpageIndex(4);
-      
+      setq3error("");
     }
   };
 
+  const validateFourth = () => {
+    if (formData.q10 == "" || formData.q11 == "" || formData.q12 == "") {
+      setq4error("*Please fill the required sections before continue");
+    } else {
+      submitForm();
+      setpageIndex(5);
+      setq4error("");
+    }
+  };
+
+  return (
+    <>
+      <Navigation />
+      {pageIndex === 1 && (
+        <FormPage1
+          formData={formData}
+          handleChange={handleChange}
+          validateFirst={validateFirst}
+          q1error={q1error}
+        />
+      )}
+
+      {pageIndex === 2 && (
+        <FormPage2
+          formData={formData}
+          handleChange={handleChange}
+          validateSecond={validateSecond}
+          q2error={q2error}
+          questionList={questionList}
+          pageIndex={pageIndex}
+          setpageIndex={setpageIndex}
+        />
+      )}
+
+      {pageIndex === 3 && (
+        <FormPage3
+          formData={formData}
+          handleChange={handleChange}
+          validateThird={validateThird}
+          q3error={q3error}
+          questionList={questionList}
+          pageIndex={pageIndex}
+          setpageIndex={setpageIndex}
+        />
+      )}
+
+      {pageIndex === 4 && (
+        <FormPage4
+          formData={formData}
+          handleChange={handleChange}
+          validateFourth={validateFourth}
+          q4error={q4error}
+          questionList={questionList}
+          pageIndex={pageIndex}
+          setpageIndex={setpageIndex}
+        />
+      )}
+
+      {(pageIndex === 5 && res==="") &&(
+        <GeneratingResult name={formData.name} />
+      )}
+
+{(pageIndex === 5 && res!=="") &&(
+        <Report 
+        name={formData.name}
+        res={res}
+        />
+      )}
+
+      <Footer />
+    </>
+  );
   if (pageIndex === 1) {
     return (
       <>
         <Navigation />
-        <div className="col-12  form ">
-          <div className="registerwrap col-lg-6 border border-3 rounded border-success ">
-            <h3 className="text-center">
-              Identify Your True Potential with Future Lanka Passion
-              Identification Bot
-            </h3>
-            <div>
-              <label htmlFor="name">Name:</label>
-              <br />
-              <input
-                className="col-12"
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-
-              <label htmlFor="q1">{questionList.q1}</label>
-              <br />
-              <textarea
-                className="col-12"
-                rows={2}
-                cols={20}
-                id="q1"
-                name="q1"
-                value={formData.q1}
-                onChange={handleChange}
-                required
-              />
-
-              <label htmlFor="q2">{questionList.q2}</label>
-              <br />
-              <textarea
-                className="col-12"
-                rows={2}
-                cols={20}
-                id="q2"
-                name="q2"
-                value={formData.q2}
-                onChange={handleChange}
-                required
-              />
-
-              <label htmlFor="q3">{questionList.q3}</label>
-              <br />
-              <textarea
-                className="col-12"
-                rows={2}
-                cols={20}
-                id="q3"
-                name="q3"
-                value={formData.q3}
-                onChange={handleChange}
-                required
-              />
-
-              <label htmlFor="q4">{questionList.q4}</label>
-              <br />
-              <textarea
-                className="col-12"
-                rows={2}
-                cols={20}
-                id="q4"
-                name="q4"
-                value={formData.q4}
-                onChange={handleChange}
-                required
-              />
-              <p className="text-danger">{q1error}</p>
-              <div className="col-12 d-flex">
-                <button onClick={() => ""} className="btn btn-warning">
-                  Back
-                </button>
-                <button
-                  onClick={() => validateFirst()}
-                  className="btn btn-warning ms-auto"
-                >
-                  Next
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <Footer />
+        <FormPage1
+          formData={formData}
+          handleChange={handleChange}
+          validateFirst={validateFirst}
+          q1error={q1error}
+        />
       </>
     );
   } else if (pageIndex === 2) {
-    
     return (
       <>
-        <Navigation />
-        <div className="col-12  form ">
-          <div className="registerwrap col-lg-6 border border-3 rounded border-success">
-            <h3 className="text-center">
-              Identify Your True Potential with Future Lanka Passion
-              Identification Bot
-            </h3>
-            <div>
-              <label htmlFor="q5">{questionList.q5}</label>
-              <br />
-              <textarea
-                className="col-12"
-                rows={2}
-                cols={20}
-                id="q5"
-                name="q5"
-                value={formData.q5}
-                onChange={handleChange}
-                required
-              />
-
-              <label htmlFor="q6">{questionList.q6}</label>
-              <br />
-              <textarea
-                className="col-12"
-                rows={2}
-                cols={20}
-                id="q6"
-                name="q6"
-                value={formData.q6}
-                onChange={handleChange}
-                required
-              />
-
-              <label htmlFor="q7">{questionList.q7}</label>
-              <br />
-              <textarea
-                className="col-12"
-                rows={2}
-                cols={20}
-                id="q7"
-                name="q7"
-                value={formData.q7}
-                onChange={handleChange}
-                required
-              />
-
-              <label htmlFor="q8">{questionList.q8}</label>
-              <br />
-              <textarea
-                className="col-12"
-                rows={2}
-                cols={20}
-                id="q8"
-                name="q8"
-                value={formData.q8}
-                onChange={handleChange}
-                required
-              />
-              <p className="text-danger">{q2error}</p>
-              <div className="col-12 d-flex">
-                <button
-                  onClick={() => setpageIndex(pageIndex - 1)}
-                  className="btn btn-warning"
-                >
-                  Back
-                </button>
-                <button
-                  onClick={() => validateSecond()}
-                  className="btn btn-warning ms-auto"
-                >
-                  Next
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <Footer />
+        <FormPage2
+          formData={formData}
+          handleChange={handleChange}
+          validateSecond={validateSecond}
+          q2error={q2error}
+          questionList={questionList}
+          pageIndex={pageIndex}
+          setpageIndex={setpageIndex}
+        />
       </>
     );
   } else if (pageIndex === 3) {
     return (
       <>
         <Navigation />
-        <div className="col-12  form ">
-          <div className="registerwrap  col-lg-6 border border-3 rounded border-success ">
-            <h3 className="text-center">
-              Identify Your True Potential with Future Lanka Passion
-              Identification Bot
-            </h3>
-            <div>
-              <label htmlFor="q9">{questionList.q9}</label>
-              <br />
-              <textarea
-                className="col-12"
-                rows={2}
-                cols={20}
-                id="q9"
-                name="q9"
-                value={formData.q9}
-                onChange={handleChange}
-                required
-              />
-
-              <label htmlFor="q10">{questionList.q10}</label>
-              <br />
-              <textarea
-                className="col-12"
-                rows={2}
-                cols={20}
-                id="q10"
-                name="q10"
-                value={formData.q10}
-                onChange={handleChange}
-                required
-              />
-
-              <label htmlFor="q11">{questionList.q11}</label>
-              <br />
-              <textarea
-                className="col-12"
-                rows={2}
-                cols={20}
-                id="q11"
-                name="q11"
-                value={formData.q11}
-                onChange={handleChange}
-                required
-              />
-
-              <label htmlFor="q12">{questionList.q12}</label>
-              <br />
-              <textarea
-                className="col-12"
-                rows={2}
-                cols={20}
-                id="q12"
-                name="q12"
-                value={formData.q12}
-                onChange={handleChange}
-                required
-              />
-              <p className="text-danger">{q2error}</p>
-              <div className="col-12 d-flex">
-                <button
-                  onClick={() => setpageIndex(pageIndex - 1)}
-                  className="btn btn-warning"
-                >
-                  Back
-                </button>
-                <button
-                  onClick={() => validateThird()}
-                  className="btn btn-warning ms-auto "
-                >
-                  Finish
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <FormPage3
+          formData={formData}
+          handleChange={handleChange}
+          validateThird={validateThird}
+          q3error={q3error}
+          questionList={questionList}
+          pageIndex={pageIndex}
+          setpageIndex={setpageIndex}
+        />
         <Footer />
       </>
     );
   } else if (pageIndex === 4) {
+    return (
+      <>
+        <Navigation />
+        <FormPage4
+          formData={formData}
+          handleChange={handleChange}
+          validateFourth={validateFourth}
+          q4error={q4error}
+          questionList={questionList}
+          pageIndex={pageIndex}
+          setpageIndex={setpageIndex}
+        />
+      </>
+    );
+  } else if (pageIndex === 5) {
     if (res === "") {
       return (
         <>
