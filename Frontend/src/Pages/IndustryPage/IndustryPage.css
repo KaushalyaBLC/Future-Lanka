@@ -1,0 +1,29 @@
+.industryBody{
+   
+        min-height: 100vh;
+     
+       
+    
+}
+
+p{
+    text-align: justify;
+}
+
+.cluster-tab{
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(145, 138, 138);
+    
+}
+
+.cluster-tab:hover{
+    transition: 2s;
+    border-width: 3px;
+    border-color: #198754;
+    background-color: rgb(243, 239, 239);
+}
+
+.cluster{
+    text-decoration: none;
+}

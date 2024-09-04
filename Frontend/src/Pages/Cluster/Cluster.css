@@ -1,0 +1,19 @@
+li{
+    list-style: disc;
+}
+
+.career{
+    border: solid;
+    border-width: 1px;
+    border-color: grey;
+}
+
+.career:hover{
+    border-width: 2px;
+    border-color: #198754;
+    transition: 0.3s;
+}
+
+.popular-career{
+    text-decoration: none;
+}

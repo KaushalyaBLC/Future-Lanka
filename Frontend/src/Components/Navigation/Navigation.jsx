@@ -10,8 +10,7 @@ const Navigation = () => {
       <Navbar expand="lg" className="navbar" bg="dark" variant="dark">
         <div className="container-lg">
           <Navbar.Brand href="./" className="">
-            <img src={Image} height="50vh" />{" "}
-            <span className="brand"> FutureLanka.lk </span>
+            <span className="brand text-warning"> Career </span> Pathfinder
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-dark" />
           <Navbar.Collapse id="basic-navbar-nav">

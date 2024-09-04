@@ -1,15 +1,13 @@
-import { useState } from 'react'
-import Home from './Components/Home/Home'
+import { useState, useEffect } from 'react';
+import Home from './Pages/HomePage';
+import Loading from './Components/Loading/Loading';
 
+// Main component
+const App = () => {
 
-
-function App() {
   return (
-    <>
-      <Home/>
+    <Home/>
+  );
+};
 
-    </>
-  )
-}
-
-export default App
+export default App;

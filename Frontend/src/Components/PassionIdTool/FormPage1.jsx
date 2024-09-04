@@ -1,18 +1,19 @@
-import React from 'react'
-import TextInput from './TextInput'
-import NumberInput from './NumberInput'
-import TextAreaInput from './TextAreaInput'
-
-
+import React from "react";
+import TextInput from "./TextInput";
+import NumberInput from "./NumberInput";
+import TextAreaInput from "./TextAreaInput";
+import AI from "./aibot.gif";
+import Footer from "../Footer/Footer";
 
 const FormPage1 = ({ formData, handleChange, validateFirst, q1error }) => {
   return (
-    <>
-    <div className="col-12  form ">
-          <div className="registerwrap col-lg-6 border border-3 rounded border-success ">
+    <section className="form">
+    <div className="container pt-5 pb-5 d-lg-flex  ">
+      <div className="">
+        <div className="bg-success rounded-3 text-light p-5">
+        <div className=" ">
             <h3 className="text-center">
-              Identify Your True Potential with Future Lanka Passion
-              Identification Bot
+              Identify Your True Potential with CareerWizard AI Bot
             </h3>
             <div>
               <TextInput
@@ -84,7 +85,7 @@ const FormPage1 = ({ formData, handleChange, validateFirst, q1error }) => {
               </select>
 
               {formData.educationLevel === "ol" && (
-                <div>
+                <div className="rounded">
                   <label>Enter Your O/L Results </label>
                   <table className="table">
                     <thead>
@@ -197,7 +198,7 @@ const FormPage1 = ({ formData, handleChange, validateFirst, q1error }) => {
                 </>
               )}
 
-              <p className="text-danger">{q1error}</p>
+              <p className="text-light">{q1error}</p>
               
               <div className="col-12 d-flex">
                 <button onClick={() => ""} className="btn btn-warning">
@@ -212,9 +213,27 @@ const FormPage1 = ({ formData, handleChange, validateFirst, q1error }) => {
               </div>
             </div>
           </div>
+          <div className="text-center"></div>
         </div>
-    </>
-  )
-}
+      </div>
+      <div className="col-lg-1"></div>
+      <div className="d-flex align-items-center col-lg-5">
+      <div className="text-center py-3">
+        <h2>
+          Tell me about your
+          <span className="text-success"> background </span>{" "}
+        </h2>
+        <p className="text-center">Your information will remain secure.</p>
+        <div className="d-flex justify-content-center">
+          <img src={AI} alt="" className="img-fluid" width={350} />
+        </div>
+        <p className="text-center text-secondary">Fill the form and click "Next" to Continue</p>
+      </div>
+      </div>
+    </div>
+    <Footer/>
+    </section>
+  );
+};
 
-export default FormPage1
+export default FormPage1;

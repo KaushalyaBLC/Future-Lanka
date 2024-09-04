@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/index.js",
-    "abc": "node ./src/database.js",
     "start-dev": "nodemon ./src/index.js"
   },
   "keywords": [],
@@ -15,6 +14,7 @@
   "dependencies": {
     "@google/generative-ai": "^0.2.1",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.18.3",
     "mysql": "^2.18.1",
     "nodemon": "^3.1.0",

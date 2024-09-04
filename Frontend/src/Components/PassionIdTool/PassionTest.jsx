@@ -17,7 +17,7 @@ const PassionTest = () => {
   const submitForm = async () => {
     try {
       const response = await fetch(
-        "https://future-lanka.onrender.com/api/submitFormData",
+        "http://127.0.0.1:9000/passionId",
         {
           method: "POST",
           headers: {
@@ -233,13 +233,15 @@ const PassionTest = () => {
       )}
 
 {(pageIndex === 5 && res!=="") &&(
+  <>
         <Report 
         name={formData.name}
         res={res}
         />
+        </>
       )}
 
-      <Footer />
+      
     </>
   );
   

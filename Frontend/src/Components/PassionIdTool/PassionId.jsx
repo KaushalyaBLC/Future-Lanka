@@ -7,68 +7,65 @@ import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 
 const PassionId = () => {
-  
-    return (
-      <section className="passionId">
-        <Navigation />
-        <div className="container pt-5 pb-5 ">
-          <h1>Welcome to AI Powered <span className="text-success">Skill & Passion Identification Bot</span></h1>
-          <div className="row mt-4">
-            <div className="col-lg-9 text">
-              <p>
-                Embark on a transformative journey of self-discovery with our
-                innovative tool. Answer some thoughtfully crafted questions to
-                uncover your passions, skills, and interests. Our intuitive
-                analysis will guide you towards a clearer understanding of your
-                unique strengths. But that's not all receive personalized career
-                recommendations based on your identified passions and skills. We
-                don't just stop at self-discovery; we pave the way for you to
-                align your career with what truly excites and motivates you.
-              </p>
-              <ul className="col-10">
-                <li>
-                  <b>Uncover Your Passions:</b> Answer some tailored questions to
-                  explore your deepest interests.
-                </li>
-                <li>
-                  <b>Identify Your Skills:</b> Discover your unique strengths
-                  and talents through our intuitive analysis.
-                </li>
-                <li>
-                  <b>Personalized Career Recommendations:</b> Receive insightful
-                  suggestions aligning your passions and skills with potential
-                  career paths.
-                </li>
-                <li>
-                  <b>Navigate Your Path:</b> Let Skill & Passion Identification Bot be your guide
-                  to a more fulfilling and purposeful life.
-                </li>
-                <li>
-                  <b>Start Your Journey:</b> Embark on a transformative
-                  experience of self-discovery and professional alignment.
-                </li>
-              </ul>
-              <div className="text-center mt-5">
-                <Link to={"./test"}>
+  return (
+    <section className="passionId">
+      <Navigation />
+      <div className="container pt-5 pb-5 d-lg-flex ">
+        <div className="col-lg-6 text-center">
+          <h1>
+            Hello, <span className="text-success">I'm CareerWizard! </span>{" "}
+          </h1>
+          <p className="text-center">
+            Your personal AI powered digital career counsellor
+          </p>
+          <div className="d-flex justify-content-center">
+            <img src={AI} alt="" className="img-fluid" width={400} />
+          </div>
+        </div>
+        <div>
+          <div className="bg-success rounded-3 text-light p-5">
+            <h5>
+              Embark on a transformative journey of self-discovery with
+              me.
+            </h5>
+            <ul className="">
+              <li>
+                <b>Uncover Your Passions:</b> Explore your deepest interests
+                with tailored questions.
+              </li>
+              <li>
+                <b>Identify Your Skills:</b> Discover your unique strengths
+                through intuitive analysis.
+              </li>
+              <li>
+                <b>Personalized Career Recommendations:</b> Get career
+                suggestions that align with your passions and skills.
+              </li>
+              <li>
+                <b>Navigate Your Path:</b> Let our bot guide you to a fulfilling
+                and purposeful life.
+              </li>
+              <li>
+                <b>Start Your Journey:</b> Experience self-discovery and
+                professional alignment today!
+              </li>
+            </ul>
+            <div className="text-center">
+            <Link to={"./test"} className="">
                   <button
-                    className="btn btn-success"
+                    className="btn btn-light"
                     onClick={() => setstate("q1")}
                   >
                     Let's Start!
                   </button>
                 </Link>
-              </div>
-            </div>
-            <div className="col-3 text-center d-flex">
-              <img src={AI} className="aibot ms-auto"/>
-            </div>
+                </div>
           </div>
         </div>
-        <Footer/>
-      </section>
-      
-    );
-  
+      </div>
+      <Footer />
+    </section>
+  );
 };
 
 export default PassionId;

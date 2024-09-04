@@ -8,43 +8,38 @@ const AboutUs = () => {
       <section className="AboutUs">
         <div className="container text-light p-3 pt-5">
           <h1>
-            <span className="text-warning">What is Future Lanka</span> Research
-            and <br />
-            Development Foundation?
+            <span className="text-warning">What is </span> Career Pathfinder?
           </h1>
 
           <div className="col-12 mt-5 d-flex flex-column flex-lg-row">
             <div className="col-lg-3"></div>
             <div className=" col-lg-8 ">
-              <h5> Empowering Careers, Transforming Lives!</h5>
+              <h5> Sri Lanka's Premier Digital Career Guidance Provider</h5>
               <p>
-                Discover a world of possibilities with Future Lanka Foundation,
-                where academics and industry professionals unite to guide you
-                towards a successful career aligned with your passions and
-                skills.
+                At Career Pathfinder, we empower students to discover their
+                passions, embrace their abilities, and make informed decisions
+                for success. Join us in crafting futures with knowledge and
+                self-discovery. Your journey to success starts here!
               </p>
               <h5 className="pt-3">Why Future Lanka Foundation?</h5>
               <ul>
                 <li>
-                  <b>Scientific Approach:</b> Unleash your potential through our
-                  unique and scientific approach to career guidance.{" "}
+                  <b>Skill & Passion Identification: </b> Uncover your true
+                  calling with expert guidance.{" "}
                 </li>
                 <li>
-                  <b> Unmatched Experiences:</b> Dive into transformative
-                  experiences - from life coaching to corporate visits -
-                  creating opportunities for your growth.{" "}
-                </li>
-                <li>
-                  {" "}
-                  <b>Industry Collaboration:</b> Benefit from our partnerships with
-                  esteemed corporates and academic institutions, ensuring
-                  unparalleled exposure.
+                  <b> Career Exploration:</b> Delve into our expansive career
+                  database to align your passions with potential career paths.{" "}
                 </li>
                 <li>
                   {" "}
-                 <b> Tailored Guidance:</b> As an independent entity, we assist you in
-                  discovering the optimal academic path and higher education
-                  provider for a seamless journey to success.
+                  <b>Higher Education Networking:</b> Navigate the landscape of
+                  higher education with confidence.
+                </li>
+                <li>
+                  {" "}
+                  <b> Soft-Skill Development: </b>Enhance essential skills for
+                  career success.
                 </li>
               </ul>
             </div>

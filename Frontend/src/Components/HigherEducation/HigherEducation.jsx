@@ -1,45 +1,55 @@
 import React from "react";
 import Navigation from "../Navigation/Navigation";
 import Footer from "../Footer/Footer";
-import Search from "./Search";
 import "./HigherEducation.css";
-import EducationTitle from "./TitleCard";
 
 const HigherEducation = () => {
   return (
     <>
       <Navigation />
-      <h1 className=" col-12 pt-3 pb-3 ps-3 mt-3 text-light bg-success">Academic Networking</h1>
-      <div className="educationBody col-12 ">
-
-        <div className="pt-3">
-          <div className="d-flex justify-content-center pt-3">
-            <EducationTitle
-              title="State University Degree Programs"
-              description="State universities in Sri Lanka offer diverse degree programs across various fields, emphasizing academic excellence and industry collaboration to prepare future professionals."
-            />
-            <EducationTitle
-              title="Non-State University Degree Programs"
-              description="Non-state universities in Sri Lanka provide a range of degree programs across diverse fields, often with a focus on specialized areas of study and practical industry-oriented learning."
-            />
-            <EducationTitle
-              title="Diploma Programs"
-              description="Diploma programs, providing specialized training and education in various fields, catering to both academic and vocational interests with a focus on practical skills and industry relevance."
-            />
+      <section className="education-body container d-flex justify-content-center align-items-center">
+        <div>
+          <div className="d-lg-flex justify-content-between p-3">
+            <div className="col-lg-4 p-2">
+              <a href="https://www.mohe.gov.lk/index.php?option=com_courses&view=course_details&Itemid=225&lang=en" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-light">
+                <div className="text-center border rounded-3 bg-warning">
+                  <h3 className="py-5">State University Degree Programs</h3>
+                </div>
+              </a>
+            </div>
+            <div className="col-lg-4 p-2">
+              <a href="https://www.coursenet.lk/courses/?levels=1,2" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-light">
+                <div className="text-center border rounded-3 bg-primary">
+                  <h3 className="py-5">Non State University Degree Programs</h3>
+                </div>
+              </a>
+            </div>
+            <div className="col-lg-4 p-2">
+              <a href="https://www.coursenet.lk/courses/?levels=4,5,6" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-light">
+                <div className="text-center border rounded-3 bg-success">
+                  <h3 className="py-5">Diploma and Higher Diploma Programs</h3>
+                </div>
+              </a>
+            </div>
           </div>
-
-          <div className="d-flex justify-content-center pt-2 pb-3">
-            <EducationTitle
-              title="Vocational Training Programs"
-              description="Vocational training programs, providing specialized skills and education tailored to specific industries or professions, offering hands-on experience and practical training to prepare individuals for the workforce."
-            />
-            <EducationTitle
-              title="Certificate Courses"
-              description="Certificate courses, offering short-term, focused training programs in specific areas of study or skill development, catering to the needs of individuals seeking to enhance their expertise or enter new fields quickly."
-            />
+          <div className="d-lg-flex px-3">
+            <div className="col-lg-6 p-2">
+              <a href="https://course.vta.lk/program/desc/" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-light">
+                <div className="text-center border rounded-3 bg-danger">
+                  <h3 className="py-5">NVQ Courses</h3>
+                </div>
+              </a>
+            </div>
+            <div className="col-lg-6 p-2">
+              <a href="https://www.coursenet.lk/courses/?levels=7,8" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-light">
+                <div className="text-center border rounded-3 bg-info">
+                  <h3 className="py-5">Certificate Courses</h3>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <Footer />
     </>
   );

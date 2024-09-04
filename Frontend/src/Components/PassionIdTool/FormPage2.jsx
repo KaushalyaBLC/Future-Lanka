@@ -1,5 +1,8 @@
 import React from "react";
 import TextAreaInput from "./TextAreaInput";
+import AI from "./aibot.gif";
+import { getCapitalizedFirstName } from "../Utils/FormatName";
+import Footer from "../Footer/Footer";
 
 const FormPage2 = ({
   formData,
@@ -11,12 +14,13 @@ const FormPage2 = ({
   setpageIndex,
 }) => {
   return (
-    <>
-      <div className="col-12  form ">
-        <div className="registerwrap col-lg-6 border border-3 rounded border-success">
+    <section className="form">
+    <div className="container pt-5 pb-5 d-lg-flex flex-row-reverse ">
+      <div>
+        <div className="bg-success rounded-3 text-light p-5">
+        <div className="">
           <h3 className="text-center">
-            Identify Your True Potential with Future Lanka Passion
-            Identification Bot
+          Identify Your True Potential with CareerWizard AI Bot
           </h3>
           <div>
             <TextAreaInput
@@ -102,8 +106,27 @@ const FormPage2 = ({
 
           </div>
         </div>
+          <div className="text-center"></div>
+        </div>
       </div>
-    </>
+      <div className="col-lg-1"></div>
+      <div className="d-flex align-items-center col-lg-5">
+      <div className="text-center py-3">
+        <h2>
+          Hi
+          <span className="text-success"> {` ${getCapitalizedFirstName(formData.name)},`}</span>{" Let's Get to Know Your Skills "}
+        </h2>
+        <p className="text-center">Unlocking your potential starts here!
+        </p>
+        <div className="d-flex justify-content-center">
+          <img src={AI} alt="" className="img-fluid" width={350} />
+        </div>
+        <p className="text-center text-secondary">Fill the form and click "Next" to Continue</p>
+      </div>
+      </div>
+    </div>
+    <Footer/>
+    </section>
   );
 };
 

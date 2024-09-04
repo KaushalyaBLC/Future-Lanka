@@ -4,15 +4,8 @@ textarea{
   
 }
 
-label{
-    margin-top: 2%;
-    
-}
 .form{
-    padding: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
     min-height: 100vh;
     background-repeat: no-repeat;
         background-size: cover;
@@ -22,29 +15,13 @@ label{
           rgba(0, 0, 0, 0)
         ),
         url("testbg.jpg");
-}
-.registerwrap{
-    background-color: white;
-    opacity: 95%;
-    padding: 5%;
+        
 }
 
-.pendinganim{
-    width: 30%;
-    height: auto;
-}
-
-.waiting{
+.h100{
     min-height: 100vh;
-    align-items: center;
-    justify-content: center;
 }
 
-@media (max-width: 767px) {
-.form{
-    padding: 2%;
-}
-.registerwrap{
-    padding: 2%;
-}
+label{
+    padding-top: 2%;
 }

@@ -1,0 +1,161 @@
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.manufacturing{
+  height: 40vh;
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("manufacturing.jpg");
+  
+}
+
+.healthcare{
+  height: 40vh;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ),
+  url("healthcare.jpg");
+}
+
+.agriculture{
+  height: 40vh;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ),
+  url("agriculture.jpg");
+}
+
+.it{
+  height: 40vh;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ),
+  url("it.jpg");
+}
+
+.automobile{
+  height: 40vh;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ),
+  url("automobile.jpg");
+}
+
+.construction{
+  height: 40vh;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ),
+  url("construction.jpg");
+}
+
+.manufacturing:hover{
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("manufacturing.jpg");
+    
+  
+}
+
+.healthcare:hover{
+  height: 40vh;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  ),
+  url("healthcare.jpg");
+}
+
+.agriculture:hover{
+  height: 40vh;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  ),
+  url("agriculture.jpg");
+}
+
+.it:hover{
+  height: 40vh;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  ),
+  url("it.jpg");
+}
+
+.automobile:hover{
+  height: 40vh;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  ),
+  url("automobile.jpg");
+}
+
+.construction:hover{
+  height: 40vh;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  ),
+  url("construction.jpg");
+}
