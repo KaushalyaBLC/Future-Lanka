@@ -5,6 +5,7 @@ import Footer from "../../Components/Footer/Footer";
 import { Link, useParams } from 'react-router-dom';
 import { useState,useEffect } from "react";
 import { CareerSearch } from "../../Components/DiscoverJobmarket/CareerSearch";
+import Loading from "../Loading";
 
 const Cluster = () => {
   const { industry, cluster } = useParams();
@@ -30,7 +31,7 @@ const Cluster = () => {
       });
   }, [cluster]);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <Loading/>;
   if (error) return <div>Error: {error.message}</div>;
 
   if (!data) return <div>No data available</div>;

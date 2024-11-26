@@ -134,16 +134,16 @@ const Skills = () => {
               <iframe
                 width="100%"
                 height="250"
-                src="https://www.youtube-nocookie.com/embed/videoseries?si=LvhgliPxBh2bz6Tg&amp;list=PL6vWkk9L7LeFloZ1hMi3lnletXhCHGokd"
+                src="https://www.youtube.com/embed/wlnQudMe1C4?si=JgIvpm8BC7__VW6m"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <h6 className="">Teams</h6>
+              <h6 className="">Skills for Success- Adaptability</h6>
               <p className="text-secondary text-center">
-                "Management Courses - Mike Clayton" Youtube Chanel
+                "Employment and Social Development" Youtube Chanel
               </p>
             </div>
           </div>
@@ -152,16 +152,16 @@ const Skills = () => {
               <iframe
                 width="100%"
                 height="250"
-                src="https://www.youtube-nocookie.com/embed/kHqotfdgNdw?si=iQZb9N8YzU7rpATh"
+                src="https://www.youtube.com/embed/lDPCPmBY4Pw?si=U3ytJf1128fSUnuz"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <h6 className="">The Science of High Performing Team</h6>
+              <h6 className="">What are Resillience and Adaptability</h6>
               <p className="text-secondary text-center">
-                "David Barkus" Youtube Chanel
+                "Personal Skill Award" Youtube Chanel
               </p>
             </div>
           </div>
@@ -170,16 +170,16 @@ const Skills = () => {
               <iframe
                 width="100%"
                 height="250"
-                src="https://www.youtube-nocookie.com/embed/8goi3AD4RWo?si=BRH_8YHMDv9yf16T"
+                src="https://www.youtube.com/embed/ZAdOKDky_mw?si=06TllJDJGKhP32sV"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <h6 className="">How to be a Team Player</h6>
+              <h6 className="">You can be adaptable, Here is how</h6>
               <p className="text-secondary text-center">
-                "Ted" Youtube Chanel
+                "Alison" Youtube Chanel
               </p>
             </div>
           </div>

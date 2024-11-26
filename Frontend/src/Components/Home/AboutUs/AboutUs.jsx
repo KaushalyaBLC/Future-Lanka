@@ -21,7 +21,7 @@ const AboutUs = () => {
                 for success. Join us in crafting futures with knowledge and
                 self-discovery. Your journey to success starts here!
               </p>
-              <h5 className="pt-3">Why Future Lanka Foundation?</h5>
+              <h5 className="pt-3">Why Career Pathfinder?</h5>
               <ul>
                 <li>
                   <b>Skill & Passion Identification: </b> Uncover your true

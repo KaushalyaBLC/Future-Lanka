@@ -18,6 +18,7 @@ import Cluster from './Pages/Cluster/Cluster.jsx';
 import { CareerSearch } from './Components/DiscoverJobmarket/CareerSearch.jsx';
 import CareerSearchResults from './Pages/CareerSearchResults/CareerSearchResults.jsx';
 import Skills from './Components/Skills/Skills.jsx';
+import Loading from './Pages/Loading.jsx';
 
 const router = createBrowserRouter([
   {

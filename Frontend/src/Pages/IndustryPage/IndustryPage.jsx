@@ -11,6 +11,7 @@ import SkillImg from "./skill.gif";
 import "./IndustryPage.css";
 import { Link } from "react-router-dom";
 import { CareerSearch } from "../../Components/DiscoverJobmarket/CareerSearch";
+import Loading from "../Loading";
 
 
 const IndustryPage = (props) => {
@@ -67,7 +68,7 @@ const IndustryPage = (props) => {
     }
   }, [props.industry]);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <Loading/>;
   if (error) return <div>Error: {error.message}</div>;
 
   if (!data) return <div>No data available</div>; // Handle the case where data is null

@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import AI from './aibot.gif';
 import Navigation from '../../Components/Navigation/Navigation';
 import Footer from '../../Components/Footer/Footer';
+import Loading from '../Loading';
 
 const CareerSearchResults = () => {
   const [data, setData] = useState([]);
@@ -39,7 +40,7 @@ const CareerSearchResults = () => {
   }, [data]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loading/>;
   }
 
   if (error) {
